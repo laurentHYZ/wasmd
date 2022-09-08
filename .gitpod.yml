@@ -1,1 +1,10 @@
-image: github.com/notional-labs/cosmos
+image: cosmwasm/cw-gitpod-base:v0.16
+
+vscode:
+  extensions:
+    - rust-lang.rust
+
+tasks:
+  - name: Dependencies & Build
+    init: |
+      cargo build
